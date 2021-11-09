@@ -1,5 +1,5 @@
 # BonelessOS
-My first OS!
+My first OS! A barebones OS name BonelessOS, simply displays "OK" over the BIOS splash screen currently.
 
 ## Requirements
 - Building requires a linux system with `nasm`.
