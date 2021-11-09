@@ -6,13 +6,13 @@ References:
 <br>
 
 ## Requirements
-- Building requires a linux system with `nasm`.
+- Building requires a linux system with `nasm` and `xorriso`.
 - Run `make` or `make all`.
 - `dist/kernel.iso` can now be emulated using `qemu`, for example.
 <br>
 
 ## Instructions  
-`sudo apt-get install nasm qemu-system`  
+`sudo apt-get install nasm xorriso qemu-system`  
 `make`  
 `qemu-system-x86_64 -cdrom dist/kernel.iso`  
 <br>
