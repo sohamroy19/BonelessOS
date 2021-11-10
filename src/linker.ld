@@ -2,7 +2,7 @@ ENTRY(start)
 
 SECTIONS
 {
-    /* start everything after 1 MB, by convention */
+    /* Leave 1 MB space for disk partition info, by convention */
     . = 1M;
 
     .boot : /* boot section */
