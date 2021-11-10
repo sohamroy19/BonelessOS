@@ -1,5 +1,5 @@
 # BonelessOS
-My first OS! A barebones OS name BonelessOS, simply displays "OK" over the BIOS splash screen currently.  
+My first OS! A barebones OS named BonelessOS, simply displays "OK" over the BIOS splash screen currently.  
 
 Resources referred:
 - [CodePulse](https://www.youtube.com/channel/UCUVahoidFA7F3Asfvamrm7w) YouTube [series](https://www.youtube.com/watch?v=FkrpUaGThTQ)
