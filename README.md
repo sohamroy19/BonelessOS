@@ -13,10 +13,11 @@ Resources referred:
 <br>
 
 ## Instructions  
-`sudo apt-get install nasm xorriso qemu-system`  
-`make`  
-`qemu-system-x86_64 -cdrom dist/kernel.iso`  
-<br>
+```
+sudo apt-get install nasm xorriso qemu-system
+make
+qemu-system-x86_64 -cdrom dist/kernel.iso
+```
 <br>
   
 TODO:
