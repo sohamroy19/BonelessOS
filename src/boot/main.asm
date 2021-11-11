@@ -1,7 +1,7 @@
 global start
 
-section .text   ; code section
-bits 32         ; 32-bit mode
+section .text           ; code section
+bits 32                 ; 32-bit mode
 
 start:
     mov esp, stack_top
@@ -15,12 +15,11 @@ start:
     hlt
 
 check_multiboot:
-    ; check if eax holds the multiboot magic number
-    cmp eax, 0x36d76289
+    cmp eax, 0x36d76289 ; multiboot magic number
     jne .no_multiboot
     ret
 .no_multiboot:
-    mov al, "M" ; error code to display
+    mov al, "M"         ; error code to display
     jmp error
 
 check_cpuid:
@@ -41,7 +40,7 @@ check_cpuid:
 
     ret
 .no_cpuid:
-    mov al, "C" ; error code to display
+    mov al, "C"         ; error code to display
     jmp error
 
 check_long_mode:
@@ -57,7 +56,7 @@ check_long_mode:
 
     ret
 .no_long_mode:
-    mov al, "L" ; error code to display
+    mov al, "L"         ; error code to display
     jmp error
 
 error:
@@ -68,7 +67,7 @@ error:
     mov byte  [0xb800a], al ; error code X
     hlt
 
-section .bss ; for uninitialized statically allocated variables
+section .bss            ; for uninitialized statically allocated variables
 stack_end:
-    resb 4096 * 4 ; 16 KB
+    resb 4096 * 4       ; 16 KB
 stack_top:
