@@ -7,21 +7,24 @@ Resources referred:
 <br>
 
 ## Requirements
-#### Building requires a Linix system with `nasm` and some `grub` tools:  
+Building requires a Linix system with `nasm` and some `grub` tools:  
 - Linux: `sudo apt install nasm grub-pc-bin grub-common xorriso`
+<br>
 
-#### `dist/kernel.iso` can be emulated using `qemu`, for example.  
+The `.iso` can be emulated using `qemu`, for example.  
 - Linux: `sudo apt install qemu-system`  
 - MacOS: `brew install qemu`  
 - Windows: https://www.qemu.org/download/#windows
 <br>
 
 ## Instructions  
-#### Building requires Linux
+Building requires Linux:
 ```
 make
 ```
-#### The `.iso` can be emulated on any OS
+<br>
+
+The `.iso` can be emulated on any OS:
 ```
 qemu-system-x86_64 -cdrom dist/kernel.iso
 ```
