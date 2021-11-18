@@ -1,4 +1,5 @@
 global long_mode_start
+extern kernel_main
 
 section .text           ; code section
 bits 64                 ; 64-bit mode
@@ -13,7 +14,6 @@ long_mode_start:
     mov fs, ax
     mov gs, ax
 
-    ; print "OK"
-    mov dword [0xb8000], 0x2f4b2f4f
+    call kernel_main    ; entry point for the C kernel code
     
     hlt

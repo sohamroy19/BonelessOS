@@ -34,4 +34,4 @@ qemu-system-x86_64 -cdrom dist/kernel.iso
 TODO:
 - [x] Write a proper `README.md`
 - [x] Implement long mode
-- [ ] Add C interfacing
+- [x] Add C interfacing

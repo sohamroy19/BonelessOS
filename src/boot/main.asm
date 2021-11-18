@@ -18,8 +18,10 @@ start:
     lgdt [gdt64.pointer]
     jmp gdt64.code_segment: long_mode_start
 
-    ; print "OK"
-    mov dword [0xb8000], 0x2f4b2f4f
+    ; the two lines below are now redundant and not executed,
+    ; but they are kept for the sake of completeness
+    
+    mov dword [0xb8000], 0x2f4b2f4f ; print "OK"
     
     hlt
 
